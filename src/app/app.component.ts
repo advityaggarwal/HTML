@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import {MobileInfoService} from './mobileInfo.service';
+import {InformationComponent} from './information/information.component';
+import {HttpClientModule} from '@angular/common/http';
+import {InformationService} from './information.service';
 
 @Component({
-  selector: 'app-root',   //name of the AppComponent tag
-  templateUrl: './app.component.html',  //URL of the HTML content of AppComponent
-  styleUrls: ['./app.component.css'],   //URL of the CSS content of AppComponent
-  providers:[MobileInfoService]   //service providers declared to AppComponent
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+  providers:[InformationService]
 })
 export class AppComponent {
-  title = 'Mobile World';
+  title = 'labbook';
 }

@@ -2,20 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { MobileInfoComponent } from './MobileInfo/MobileInfo.component';
+import { InformationComponent } from './information/information.component';
 import { HttpClientModule }    from '@angular/common/http';
-import {MobileInfoService} from './mobileInfo.service';
+import {InformationService} from './information.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MobileInfoComponent
+    InformationComponent
   ],
   imports: [
     BrowserModule,HttpClientModule,FormsModule
   ],
-  providers: [MobileInfoService],
+  providers: [InformationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
