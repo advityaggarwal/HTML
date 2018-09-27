@@ -1,0 +1,50 @@
+body
+{
+    background-image: url('desert.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial;
+    color: white;
+
+}
+ul
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    line-height: 25px;
+}
+ul li
+{
+    
+    
+    float: left;
+    width:24%;
+    height: 40px;
+    line-height: 40px; 
+    background-color: orange;
+    opacity: .7;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    
+}
+ul li a
+{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    display: block;
+    
+}
+ul li a:hover{
+    background-color: green;
+  }
+ul li ul li{
+    width:100%;
+    display: none;
+    float: none;
+}
+ul li:hover ul li{
+    display: block;
+}
