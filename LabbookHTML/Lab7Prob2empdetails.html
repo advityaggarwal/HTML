@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Problem 2 Employee Details</title>
+    </head>
+    <body>
+        <table border="2px black solid" style="background-color:cyan" align="center">
+            <tr>
+                <th>Name</th>
+                <td><form><input type="text" name="name" size="20" maxlength="20"></form></td>
+            </tr>
+            <tr>
+                <th>Employee Code</th>
+                <td><form><input type="text" name="empcode" size="4" maxlength="4"></form></td>
+            </tr>
+            <tr>
+                <th>Department</th>
+                <td><form><input type="radio" name="dept">Admin<br>
+                <input type="radio" name="dept">HR<br>
+                <input type="radio" name="dept">Technical<br>
+                <input type="radio" name="dept">Accounts</form></td>
+            </tr>
+            <tr>
+                <th>Date of Joining</th>
+                <td><form><select name="date">
+                    <option value="1" selected>1</option>
+                    </select>
+                    <select name="month">
+                    <option value="01" selected>01</option>
+                    </select>
+                    <select name="year">
+                    <option value="2014" selected>2014</option>
+                    </select>
+                    </form>
+                    <b align="left"><pre>dd    mm    YYYY</pre></b></td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><form><textarea style="height:80px; width:200px"></textarea></form></td>
+            </tr>
+            <tr>
+                <th>Training Programme attended</th>
+                <td><form><input type="checkbox" name="training">HTML/DTML
+                <input type="checkbox" name="training">Java
+                <input type="checkbox" name="training">Client/Server
+                <input type="checkbox" name="training">.NET</form></td>
+            </tr>
+            <tr>
+                <th>Training programme need to attend</th>
+                <td><form><select name="attend">
+                    <option value="Javascript" selected>JavaScript</option>
+                    <option value="ABCD">ABCD</option>
+                    <option value="PHP">PHP</option>
+                    <option value="C/C++">C/C++</option>
+                    </select>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <th>Send the information at</th>
+                <td><a href="mailto:empinfo@capgemini.com?subject=Employee Details">empinfo@capgemini.com</a></td>
+            </tr>
+        </table>
+    </body>
+</html>
